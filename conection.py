@@ -3,8 +3,8 @@ import socketio
 from othello import reshape_board, printboard, movement
 from minimax import minimax
 
-USERNAME = 'JoseRa'
-TOURNAMENT_ID = 142857
+USERNAME = 'playerone'
+TOURNAMENT_ID = 1
 USER_ROL = 'player'
 
 GAME_ID = 0
@@ -15,7 +15,7 @@ BOARD = []
 # Standard Python
 sio = socketio.Client()
 
-sio.connect('http://192.168.1.148:4000')
+sio.connect('http://192.168.1.10:4000')
 
 
 @sio.event
